@@ -7,7 +7,8 @@ import time
 import tkinter as tk
 import socket
 
-#TODO add port scan
+#TODO: add port scan
+#TODO: make printout in order
 
 def ping(ip_address):
     command = "ping -n 1 -w 500 "

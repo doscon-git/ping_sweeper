@@ -11,7 +11,7 @@ import socket
 #TODO: make printout in order
 
 def ping(ip_address):
-    command = "ping -n 1 -w 500 "
+    command = "ping -n 1 -w 800 "
     response = os.popen(command + ip_address)
     lines = response.readlines()
     for line in lines:
@@ -49,6 +49,7 @@ def tk_ping_sweep():
          subnet = ".".join(scan_address.split(".")[:-1])+".{}"
          
          ping_sweep(subnet)
+         
     else:
         print("invalid address")
 
